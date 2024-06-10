@@ -1,0 +1,48 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>SkeletonAPP</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <ion-header collapse="condense">
+    <ion-toolbar>
+      <ion-title size="large">SkeletonAPP</ion-title>
+    </ion-toolbar>
+  </ion-header>
+
+<div class="ion-text-center cuerpo_page">
+
+  <!-- Colocamos todo dentro de un ion-card -->
+  <ion-card>
+    <ion-card-title>
+      <h3>Bienvenidos</h3>
+    </ion-card-title>
+
+     
+
+    <!-- Creamos los campos para el login -->
+    <ion-card-content>
+      <ion-item>
+        <ion-label position="floating">Usuario</ion-label>
+        <ion-input type="text" maxlength="8" minlength="3" [(ngModel)]="usuario"></ion-input>
+      </ion-item>
+
+      <ion-item>
+        <ion-label position="floating">Password</ion-label>
+        <ion-input type="Password" maxlength="4" [(ngModel)]="password"></ion-input>
+      </ion-item>
+
+    </ion-card-content>
+      <!-- Creamos el boton -->
+
+      <ion-button expand="block" (click)="login()">Ingrese ahora</ion-button> 
+      <ion-button expand="block" (click)="crear_cuenta()">Crear Cuenta</ion-button> 
+
+  </ion-card>
+
+</div>
+
+
+
+</ion-content>
